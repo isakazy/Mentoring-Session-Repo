@@ -5,19 +5,24 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class SauceDemo {
-    public SauceDemo() {
+public class logInPage {
+
+    public logInPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "//input[@id='user-name']")
     public WebElement userNameInputField;
 
-  @FindBy(xpath = "//input[@id='password']")
+    @FindBy(xpath = "//input[@id='password']")
     public WebElement passwordInputField;
 
-  @FindBy(xpath = "//input[@id='login-button']")
+    @FindBy(xpath = "//input[@id='login-button']")
     public WebElement loginButton;
+
+
+
+
 
 }
 
